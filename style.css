@@ -1,0 +1,278 @@
+.foot{
+/* background-color: grey; */
+    text-align: center;
+    /* background-color:#1a1a2e; */
+     background-color: #1e1e1e;
+    color:#ffd700;
+    /* position:fixed; */
+    left:0;
+    bottom:0;
+    width:100%   ;
+     z-index: 999;
+
+     height:150px;
+     
+
+}
+
+.about{
+    text-align: center;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+  }
+
+  /* Hide checkbox */
+  #menuToggle {
+    display: none;
+  }
+
+  /* Hamburger icon */
+  .hamburger {
+    position: fixed;      /* stays clickable even when menu opens */
+    top: 16px;
+    left: 16px;
+    cursor: pointer;
+    width: 32px;
+    z-index: 1001;        /* above sidebar */
+  }
+  .hamburger span {
+    display: block;
+    height: 4px;
+    background: #fff;
+    margin: 6px 0;
+    border-radius: 2px;
+    transition: 0.4s;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    background: #111;
+    top: 0;
+    left: -220px;   /* hidden */
+    padding-top: 70px;
+    transition: 0.4s;
+    z-index: 1000;
+  }
+
+  .sidebar a {
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  .sidebar a:hover {
+    background: #222;
+  }
+
+  /* When checked = open sidebar */
+  #menuToggle:checked ~ .sidebar {
+    left: 0;
+  }
+
+  /* Hamburger becomes X */
+  #menuToggle:checked + label .line1 {
+    transform: translateY(10px) rotate(45deg);
+  }
+  #menuToggle:checked + label .line2 {
+    opacity: 0;
+  }
+  #menuToggle:checked + label .line3 {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+
+
+
+
+  
+/* Contact Section */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  
+}
+
+.contact label {
+  font-weight: 600;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: 2px solid #ffd700;
+  background-color: #222;
+  color: #fff;
+}
+
+.contact button {
+  background-color: #ffd700;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #ffb700;
+}
+
+/* Contact Section */
+.contact {
+  padding: 3rem 1rem;
+  background-color: grey;   /* ya koi bhi red shade: #e50914, #d60000, etc. */
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* baaki code same */
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 250px); /* 2 per row */
+  gap: 500px;                    
+            
+  justify-items: center;      
+   justify-content: center;  
+  margin-top: 70px;   
+  row-gap: 50px;
+  column-gap:150px;
+     /* center each card */
+}
+
+.cards img {
+  width: 260px;        /* set card size like your EEE image */
+  border-radius: 20px; /* optional rounded corners */
+}
+
+
+  .row {
+    width:100%;
+    flex-wrap: wrap;
+    
+    display: flex;
+    justify-content: center;  /* beech mein laane ke liye */
+    gap: 60px 70px;                /* images ke beech ka distance */
+    margin-top: 80px;
+  }
+  .row img{
+    height: 230px;
+    width: 230px;
+    border-radius: 25px;
+    display: block;
+  }
+
+  .what img{transition:transform 0.2s ease;
+opacity:0.3s ease;
+}
+.what:hover img{
+    transform: scale(1.3);
+    opacity: 0.8;
+}
+
+  .insta img{transition:transform 0.2s ease;
+opacity:0.3s ease;
+}
+.insta:hover img{
+    transform: scale(1.3);
+    opacity: 0.8;
+}
+
+  .face img{transition:transform 0.2s ease;
+opacity:0.3s ease;
+}
+.face:hover img{
+    transform: scale(1.3);
+    opacity: 0.8;
+}
+
+  .x img{transition:transform 0.2s ease;
+opacity:0.3s ease;
+}
+.x:hover img{
+    transform: scale(1.3);
+    opacity: 0.8;
+}
+
+  .email img{transition:transform 0.2s ease;
+opacity:0.3s ease;
+}
+.email:hover img{
+    transform: scale(1.3);
+    opacity: 0.8;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 250px); /* 2 per row */
+  gap: 500px;                    
+            
+  justify-items: center;      
+   justify-content: center;  
+  margin-top: 70px;   
+  row-gap: 50px;
+  column-gap:150px;
+     /* center each card */
+}
+
+.services img {
+  width: 260px;        /* set card size like your EEE image */
+  border-radius: 20px; /* optional rounded corners */
+}
+
+.course{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 90px;
+    margin-left: 220px;
+
+    
+ margin-top: 70px;
+    margin-bottom: 60px; 
+  }
+  .imgs{
+    height: 230px;
+    width: 230px;
+    border-radius: 25px;
+  }
+  .textx{
+    color:white;
+
+    
+  }
+  .unit-box{
+    text-decoration: none;
+  }
+  .contacts{
+    text-align: center;
+    color:#ffb700;
+    font-size: 50px;
+  
+  }
